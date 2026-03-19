@@ -1,3 +1,29 @@
 /1.md
 /2025服务端-3.12-1.pdf
 /2025服务端-3.5.pdf
+/hellserver-api/
+/2.md
+/2025服务端-3.19.md
+
+# 忽略Bruno测试配置文件
+**/hellserver-api/
+**/*.bru
+**/*.yml
+
+# 忽略所有Markdown任务文档
+*.md
+
+# 忽略PDF文件
+*.pdf
+
+# 忽略IDE配置文件
+.idea/
+.vscode/
+*.iml
+
+# 忽略Maven构建文件
+target/
+*.class
+
+# 忽略日志文件
+*.log

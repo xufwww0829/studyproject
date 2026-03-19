@@ -15,19 +15,19 @@ public class Result<T> {
     }
 
     public static <T> Result<T> success(T data) {
-        return new Result<>(200, "操作成功", data);
+        Result<T> result = new Result<>();
+        result.code = ResultCode.SUCCESS.getCode();
+        result.msg = ResultCode.SUCCESS.getMsg();
+        result.data = data;
+        return result;
     }
 
-    public static <T> Result<T> success(String msg, T data) {
-        return new Result<>(200, msg, data);
-    }
-
-    public static <T> Result<T> error(String msg) {
-        return new Result<>(500, msg, null);
-    }
-
-    public static <T> Result<T> error(Integer code, String msg) {
-        return new Result<>(code, msg, null);
+    public static <T> Result<T> error(ResultCode resultCode) {
+        Result<T> result = new Result<>();
+        result.code = resultCode.getCode();
+        result.msg = resultCode.getMsg();
+        result.data = null;
+        return result;
     }
 
     public Integer getCode() {
