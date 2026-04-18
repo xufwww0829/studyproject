@@ -22,6 +22,14 @@ public class Result<T> {
         return result;
     }
 
+    public static <T> Result<T> success(String msg, T data) {
+        Result<T> result = new Result<>();
+        result.code = ResultCode.SUCCESS.getCode();
+        result.msg = msg;
+        result.data = data;
+        return result;
+    }
+
     public static <T> Result<T> error(ResultCode resultCode) {
         Result<T> result = new Result<>();
         result.code = resultCode.getCode();

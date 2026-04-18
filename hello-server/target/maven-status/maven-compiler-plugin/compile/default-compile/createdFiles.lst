@@ -1,8 +1,3 @@
-com\stu\helloserver\common\Result.class
-com\stu\helloserver\HelloController.class
-com\stu\helloserver\controller\UserController.class
-com\stu\helloserver\interceptor\AuthInterceptor.class
-com\stu\helloserver\common\ResultCode.class
-com\stu\helloserver\entity\User.class
-com\stu\helloserver\HelloServerApplication.class
-com\stu\helloserver\config\WebConfig.class
+com\stu\helloserver\mapper\UserInfoMapper.class
+com\stu\helloserver\entity\UserInfo.class
+com\stu\helloserver\vo\UserDetailVO.class

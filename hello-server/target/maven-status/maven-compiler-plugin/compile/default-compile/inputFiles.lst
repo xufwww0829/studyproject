@@ -1,13 +1,17 @@
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\common\Result.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\common\ResultCode.java
+L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\config\MyBatisPlusConfig.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\config\WebConfig.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\controller\UserController.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\dto\UserDTO.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\entity\User.java
+L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\entity\UserInfo.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\exception\GlobalExceptionHandler.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\HelloController.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\HelloServerApplication.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\interceptor\AuthInterceptor.java
+L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\mapper\UserInfoMapper.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\mapper\UserMapper.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\service\impl\UserServiceImpl.java
 L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\service\UserService.java
+L:\AllforountbackeProject\studyproject\hello-server\src\main\java\com\stu\helloserver\vo\UserDetailVO.java
