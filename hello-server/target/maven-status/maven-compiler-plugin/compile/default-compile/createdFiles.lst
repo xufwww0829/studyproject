@@ -1,4 +1,6 @@
 com\stu\helloserver\mapper\UserInfoMapper.class
+com\stu\helloserver\security\JwtUtil.class
 com\stu\helloserver\entity\UserInfo.class
 com\stu\helloserver\vo\UserDetailVO.class
+com\stu\helloserver\security\JwtAuthenticationFilter.class
 com\stu\helloserver\config\SecurityConfig.class

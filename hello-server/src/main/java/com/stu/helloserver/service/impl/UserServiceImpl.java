@@ -11,6 +11,7 @@ import com.stu.helloserver.entity.User;
 import com.stu.helloserver.entity.UserInfo;
 import com.stu.helloserver.mapper.UserInfoMapper;
 import com.stu.helloserver.mapper.UserMapper;
+import com.stu.helloserver.security.JwtUtil;
 import com.stu.helloserver.service.UserService;
 import com.stu.helloserver.vo.UserDetailVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -34,6 +34,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private StringRedisTemplate redisTemplate;
+
+    @Autowired
+    private JwtUtil jwtUtil;
 
     @Override
     @Transactional
@@ -65,8 +68,8 @@ public class UserServiceImpl implements UserService {
             return Result.error(ResultCode.PASSWORD_ERROR);
         }
 
-        String token = "Bearer " + UUID.randomUUID();
-        return Result.success(token);
+        String jwt = jwtUtil.generateToken(userDTO.getUsername());
+        return Result.success(jwt);
     }
 
     @Override
